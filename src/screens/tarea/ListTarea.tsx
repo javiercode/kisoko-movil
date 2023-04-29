@@ -107,6 +107,63 @@ export const ListTarea: React.FC<ITareaListProps> = ({ tipo,navDetalle,title }: 
                     <Divider key={"tarea-divider-key-" + index} />
                 </View>
             ))}
+            <View key={"tarea-view" }>
+                    <Card key={"tarea-card-key-" }>
+                        <TouchableHighlight onPress={() => { navDetalle({id: "1",
+  tipo: 'P', codCliente: 'string', responsable: 'Javier Canqui', fecha: new Date().toLocaleDateString(),
+  recordatorio: 5,
+  motivo: "compra",
+  referencia: "S/R",
+  estado: "P",
+  fechaRegistro: new Date().toLocaleDateString(),  
+  usuarioRegistro: "xavier",
+  sucursalRegistro:2,
+  ubicacion:"La Paz",
+  cliente:{id: "string",
+    nombre: "Leche",
+    telefono1: "",
+    telefono2: "",
+    direccion: "direccion test",
+    ci: "821345",
+    complemento: "",
+    extension: "LP",
+    comentario: "",
+    estado: "P",
+    fechaRegistro: new Date().toLocaleDateString(),
+    usuarioRegistro: "xavier",
+    sucursalRegistro:0,
+    latitud:-16.1232,
+    longitud:-68.521}}) }} underlayColor="white" key={"tarea-card-touch-" }>
+                            <Card.Title key={"tarea-card-title-key-" }
+                                title={Object.values(TipoTareaEnum)[Object.keys(TipoTareaEnum).indexOf("P")]}
+                                subtitle={"Producto: Leche" }
+                                titleStyle={{ fontSize: 16 }}
+                                subtitleStyle={{ fontWeight: 'bold' }}
+                                left={(props) => <IconButton size={30} icon="clipboard-arrow-right" color={Color.white}
+                                    key={"tarea-card-title-icon-key-" } style={{ backgroundColor: Color.secondary }} />}
+                                right={(props) => <IconButton {...props} icon="clipboard-arrow-right" color={Color.secondary} />}
+
+                            />
+                        </TouchableHighlight>
+                        <Card.Content key={"tcard-key-" }>
+                            <DataTable.Row key={"tcard-row-dir-key-" }>
+                                <DataTable.Cell key={"tcard-row-cell-dir-key-" }>Monto:</DataTable.Cell>
+                                <DataTable.Cell key={"tcard-row-cell-dir-val-" }>{"10.00 Bs"}</DataTable.Cell>
+                            </DataTable.Row >
+                            <DataTable.Row key={"tcard-row-fecha-key-" }>
+                                <DataTable.Cell key={"tcard-row-fecha-key-" }>Fecha</DataTable.Cell>
+                                <DataTable.Cell key={"tcard-row-fecha-val-" }>{"28/04/2023 14:50"}</DataTable.Cell>
+                            </DataTable.Row>
+                            
+                            <DataTable.Row key={"tcard-row-note-key-" }>
+                                <DataTable.Cell key={"tcard-row-note-key-" }>Obs</DataTable.Cell>
+                                <DataTable.Cell key={"tcard-row-note-val-" }>{"Sin Observaciones"}</DataTable.Cell>
+                            </DataTable.Row>
+                            
+                        </Card.Content>
+                    </Card>
+                    <Divider key={"tarea-divider-key-" } />
+                </View>
         </ScrollView>
     )
 }

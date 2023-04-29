@@ -104,7 +104,7 @@ const AppNavigator = (props: any) => {
           headerLeft: () => (
             <HeaderLeft navigation={navigation} />
           ),
-          title: 'Clientes'
+          title: 'Productos'
         }}
           name={MenuPathEnum.CLIENTE} component={Cliente} />
 
@@ -115,7 +115,7 @@ const AppNavigator = (props: any) => {
           headerLeft: () => (
             <HeaderLeft navigation={navigation} />
           ),
-          title: 'Cliente'
+          title: 'Producto'
         }}
           name={MenuPathEnum.CLIENTE_DETAIL} component={ClienteDetalle} />
 
@@ -126,7 +126,7 @@ const AppNavigator = (props: any) => {
           headerLeft: () => (
             <HeaderLeft navigation={navigation} />
           ),
-          title: 'Crear Cliente'
+          title: 'Crear Producto'
         }}
           name={MenuPathEnum.CLIENTE_CREATE} component={ClienteCreate} />
         {/* </Stack.Group>
@@ -168,7 +168,7 @@ const AppNavigator = (props: any) => {
           headerLeft: () => (
             <HeaderLeft navigation={navigation} />
           ),
-          title: 'Jornada'
+          title: 'Mi Kiosko'
         }}
           name={MenuPathEnum.JORNADA} component={Jornada} />
       </Stack.Navigator>
@@ -187,7 +187,7 @@ const AppNavigator = (props: any) => {
             headerLeft: () => (
               <HeaderLeft navigation={navigation} />
             ),
-            title: 'Tareas'
+            title: 'Movimientos'
           }}
             name={MenuPathEnum.TAREA} component={Tarea} />
 
@@ -201,7 +201,7 @@ const AppNavigator = (props: any) => {
             headerLeft: () => (
               <HeaderLeft navigation={navigation} />
             ),
-            title: 'Crear Tarea'
+            title: 'Comprar'
           }}
             name={MenuPathEnum.TAREA_CREATE} component={TareaCreate} />
 
@@ -212,7 +212,7 @@ const AppNavigator = (props: any) => {
             headerLeft: () => (
               <HeaderLeft navigation={navigation} />
             ),
-            title: 'Tarea'
+            title: 'Compra'
           }}
             name={MenuPathEnum.TAREA_DETALLE} component={TareaDetalle} />
 
@@ -223,7 +223,7 @@ const AppNavigator = (props: any) => {
             headerLeft: () => (
               <HeaderLeft navigation={navigation} />
             ),
-            title: 'Editar Tarea'
+            title: 'Editar Compra'
           }}
             name={MenuPathEnum.TAREA_EDIT} component={TareaEdit} />
 

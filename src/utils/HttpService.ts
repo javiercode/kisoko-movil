@@ -8,7 +8,7 @@ import { ReducerType } from './interfaces/ILoginStore';
 
 
 // const urlBase = ("http://api.dev.bg.com.bo/micliente/api/v3");
-const urlBase = ("http://192.168.27.141:9091/micliente/api/v3");
+const urlBase = ("http://192.168.8.50:4000/kiosko/api/v1");
 async function postService(url: string, data: any): Promise<MessageResponse> {
   return methodService('POST', url, data);
 };
@@ -144,6 +144,7 @@ async function doLogin(user: string, password: string): Promise<MessageResponse>
       Accept: 'application/json',
       'Content-Type': 'application/json'
     }
+    console.log("login",urlBase + '/login')
     const result = await fetch(urlBase + '/login', {
       method: 'POST',
       headers: headers,

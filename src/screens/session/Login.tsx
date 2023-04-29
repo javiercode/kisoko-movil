@@ -74,8 +74,8 @@ export default function Login2({ route, navigation }: Props) {
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
           <View style={styles.container}>
             <View >
-              <Image source={require(logUrl)} style={styles.logo} />
-              <Text style={styles.titulo}>MI CLIENTE</Text>
+              {/* <Image source={require(logUrl)} style={styles.logo} /> */}
+              <Text style={styles.titulo}>MI KIOSKO</Text>
             </View>
             <View style={styles.subcontainer}>
               <TextInput
@@ -148,9 +148,9 @@ const styles = StyleSheet.create({
   },
   titulo: {
     width: 323,
-    height: 35,
+    height: 45,
     fontFamily: "Montserrat",
-    fontSize: 28,
+    fontSize: 42,
     fontWeight: "bold",
     fontStyle: "normal",
     color: ThemeStyle.SECONDARY_COLOR,

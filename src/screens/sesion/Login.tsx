@@ -71,9 +71,8 @@ const Login = () => {
 
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
           <View style={styles.container2}>
-            <Image source={require(logUrl)} style={styles.logo} />
-            <Text style={styles.titulo}>MI CLIENTE</Text>
-            <Text style={styles.subtitulo}>BGA</Text>
+            {/* <Image source={require(logUrl)} style={styles.logo} /> */}
+            <Text style={styles.titulo}>MI KIOSKOs</Text>
 
             <TextInput
               style={styles.user}
